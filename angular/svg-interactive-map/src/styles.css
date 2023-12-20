@@ -1,0 +1,35 @@
+
+#mapsection {
+  width: 50%;
+  height: auto;
+  fill: #ccc;
+  stroke: #333;
+  stroke-width: 2;
+}
+
+path {
+  fill: #1da1f2;
+}
+path:hover {
+  fill: purple;
+  stroke: red;
+  stroke-width: 3px;
+  transition: fill 0.4s;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+  }
+
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .column:first-child {
+    border-right: 1px solid #ccc;
+  }

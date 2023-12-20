@@ -1,0 +1,23 @@
+<!-- References
+https://api.worldbank.org/v2/country/?page=1&per_page=299
+https://www.freecodecamp.org/news/how-to-make-clickable-svg-map-html-css/ -->
+<div class="container">
+  <div class="column">
+    <h2>Map</h2>
+    <app-map></app-map>
+  </div>
+  <div class="column">
+    <h2>Description</h2>
+    <table>
+      <ul>
+        <li>Country Name: {{ properties[1][0].name }}</li>
+        <li>Country Region: {{ properties[1][0].region.value }}</li>
+        <li>Income Level: {{ properties[1][0].incomeLevel.value }}</li>
+        <li>Country Capital: {{ properties[1][0].capitalCity }}</li>
+        <li>Longitude: {{ properties[1][0].longitude }}</li>
+        <li>Latitude: {{ properties[1][0].latitude }}</li>
+      </ul>
+    </table>
+</div>
+<router-outlet></router-outlet>
+

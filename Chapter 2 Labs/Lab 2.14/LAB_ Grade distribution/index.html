@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Grade Distribution</title>
+      <style>
+         .bar0 {
+            background-color: #00C000;
+         }
+   
+         .bar1 {
+            background-color: #309000;
+         }
+   
+         .bar2 {
+            background-color: #606000;
+         }
+   
+         .bar3 {
+            background-color: #903000;
+         }
+   
+         .bar4 {
+            background-color: #C00000;
+         }
+   
+         td {
+            vertical-align: bottom;
+         }
+   
+         #distributionTable {
+            border: 2px solid black;
+         }
+      </style>
+   </head>
+   <body>
+      <table id="distributionTable">
+         <tr id="firstRow">
+            <td><div style="height:0px" class="bar0"></div></td>
+            <td><div style="height:0px" class="bar1"></div></td>
+            <td><div style="height:0px" class="bar2"></div></td>
+            <td><div style="height:0px" class="bar3"></div></td>
+            <td><div style="height:0px" class="bar4"></div></td>      
+         </tr>
+         <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>F</td>
+         </tr>
+         <tr id="thirdRow">
+            <td><div class="gradeA"></div></td>
+            <td><div class="gradeB"></div></td>
+            <td><div class="gradeC"></div></td>
+            <td><div class="gradeD"></div></td>
+            <td><div class="gradeF"></div></td>      
+         </tr>
+      </table>
+   </body>
+   <script src="index.js" defer></script>
+</html>

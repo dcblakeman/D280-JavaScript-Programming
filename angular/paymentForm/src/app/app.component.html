@@ -1,0 +1,69 @@
+<div class="container">
+  <h3>Accounts Payable Form</h3>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payee Name</label>
+      <input class="form-control" (input)="onNameChange($any($event.target).value)" />
+    </div>
+
+    <div class="col">
+      <label><b>Name</b></label>
+      <div>
+        {{ name | titlecase }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment Date</label>
+      <input
+        type="date"
+        class="form-control"
+        (input)="onDateChange($any($event.target).value)"
+      />
+    </div>
+
+    <div class="col">
+      <label><b>Payment Date</b></label>
+      <div>
+        {{ date | date: 'MMMM d, y' }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment Amount</label>
+      <input
+        class="form-control"
+        (input)="onAmountChange($any($event.target).value)"
+      />
+    </div>
+
+    <div class="col">
+      <label><b>Payment Amount</b></label>
+      <div>
+        {{ amount | currency: 'GBP' }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Annual Interest Rate</label>
+      <input
+        class="form-control"
+        (input)="onInterestChange($any($event.target).value)"
+      />
+    </div>
+
+    <div class="col">
+      <label><b>Annual Interest Rate</b></label>
+      <div>
+        {{ interest | percent }}
+      </div>
+    </div>
+  </div>
+</div>
